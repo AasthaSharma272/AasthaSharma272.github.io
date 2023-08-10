@@ -1,11 +1,22 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url('mountains-pink-sky-twilight-sunset-dusk-snow-covered-2560x1440-8263-_1_.jpg');
+    background-size: cover;
   }
   
   .navbar {
-    background-color: #333;
-    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    z-index: 1000; /* Ensure the navbar is on top */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
   }
   
   .nav-list {
@@ -20,30 +31,24 @@ body {
   }
   
   .nav-item a {
-    display: block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: color 0.3s;
   }
   
-  .nav-item a:hover {
-    background-color: #555;
+  .header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
-  /* Responsive styles */
-  @media screen and (max-width: 600px) {
-    .navbar {
-      overflow: auto;
-    }
-  
-    .nav-list {
-      flex-direction: column;
-    }
-  
-    .nav-item {
-      margin: 0;
-    }
+  .content {
+    padding: 50px;
+    background-color: white;
+    color: black;
   }
   
