@@ -9,14 +9,15 @@ body {
     background-color: transparent;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%; /* Center the navbar horizontally */
+    transform: translateX(-50%); /* Center the navbar using transform */
+    width: 5000px; /* Increase the width */
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s;
-    z-index: 1000; /* Ensure the navbar is on top */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    z-index: 1000;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
   }
   
   .nav-list {
@@ -28,10 +29,11 @@ body {
   
   .nav-item {
     margin-right: 20px;
+    color: #EFE1D1;
   }
   
   .nav-item a {
-    color: white;
+    color: #EFE1D1;
     text-decoration: none;
     transition: color 0.3s;
   }
@@ -42,7 +44,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #EFE1D1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
